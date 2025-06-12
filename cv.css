@@ -1,0 +1,43 @@
+body{
+    background-color: antiquewhite;
+}
+header{
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+}
+nav{
+    padding: 10px 0; 
+	padding-left: 10px;
+	border-top: 1px solid rgba(0,0,0,1.00);
+	border-bottom: 1px solid rgba(0,0,0,1.00);
+	margin-bottom: 20px;
+    font-weight: 900 ;
+    font-size: 20px;
+}
+.logo{
+    height: 30px;
+    width: auto;
+}
+.lateral{
+    position: relative;
+    left: 0px;
+    height: 100%;
+    width: 300px;
+    background-color: transparent;
+    color: black;
+    z-index: 100;
+}
+.contenedor {
+    display: flex;
+    justify-content: center;   /* Centra horizontalmente */
+    align-items: center;       /* Centra verticalmente */
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.img{
+    width: 50%;
+    height: 50%;
+    border-radius: 20px; 
+
+}
