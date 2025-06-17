@@ -1,24 +1,30 @@
-body{
-    background-color: antiquewhite;
+* {
+    box-sizing: border-box;
 }
 header{
-    background-color: black;
+    background-color: rgb(47, 109, 160);
     border-radius: 10px;
     color: white;
 }
 nav{
     padding: 10px 0; 
 	padding-left: 10px;
-	border-top: 1px solid rgba(0,0,0,1.00);
-	border-bottom: 1px solid rgba(0,0,0,1.00);
+	border-top: 1px solid steelblue;
+	border-bottom: 1px solid steelblue;
 	margin-bottom: 20px;
     font-weight: 900 ;
     font-size: 20px;
+
 }
-.logo{
-    height: 30px;
-    width: auto;
+#logo {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
 }
+    #logo img {
+        width: 100%;
+        border-radius: 50%;
+    }
 .lateral{
     position: relative;
     left: 0px;
@@ -32,12 +38,73 @@ nav{
     display: flex;
     justify-content: center;   /* Centra horizontalmente */
     align-items: center;       /* Centra verticalmente */
-    border: 2px solid black;
+    border: 2px solid steelblue;
     border-radius: 10px;
+    justify-content: space-around;
 }
-.img{
-    width: 50%;
-    height: 50%;
-    border-radius: 20px; 
+.contenedor1{
+    border-bottom: 50px;
+}
+.contenedorcitos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.menu {
+    width: 100%;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  
+}
+.menu ul {
+    padding: 0;
+    margin: 0;
+    display: flex;  /* Distribución horizontal */
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.menu li {
+    flex: 1;  /* Cada li ocupa el mismo espacio */
+    text-align: center;
+    border-right: 1px solid #555;  /* Separador entre items */
+}
+
+.menu li:last-child {
+    border-right: none;  /* Quita borde del último elemento */
+}
+h2 {
+    text-align: center;
+    color: black;
+   
+    font-family: 'Arial', sans-serif;
+}
+.menu a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 15px 0;
+    font-weight: bold;
+    transition: all 0.3s ease;
+   
+}
+.menu a:hover {
+    background-color: steelblue;
+    transform: scale(1.05);
+}
+.caja{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: right;
 
 }
+
+.caja {
+    width : 300px;
+    height: 200px;
+    overflow: hidden;
+    justify-content: center;
+    border: 1px solid #007acc;
+    margin: 2px;}
